@@ -17,7 +17,6 @@ function App() {
     const res = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=52ef927bbeb21980cd91386a29403c78&language=ar")
     setmovies(res.data.results)
     setpageCount(res.data.total_pages)
-    // console.log(res.data.total_pages)
   }
 
   const getPage = async (page) => {
